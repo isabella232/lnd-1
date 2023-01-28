@@ -1,4 +1,4 @@
-module github.com/indra-labs/lnd
+module git-indra.lan/indra-labs/lnd
 
 go 1.19
 
