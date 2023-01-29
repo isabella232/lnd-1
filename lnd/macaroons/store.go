@@ -8,9 +8,9 @@ import (
 	"io"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 	"github.com/btcsuite/btcwallet/snacl"
 	"github.com/btcsuite/btcwallet/walletdb"
-	"github.com/indra-labs/lnd/lnd/kvdb"
 )
 
 const (

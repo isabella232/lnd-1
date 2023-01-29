@@ -1,11 +1,11 @@
 package lookout
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
 )
 
 // Service abstracts the lookout functionality, supporting the ability to start

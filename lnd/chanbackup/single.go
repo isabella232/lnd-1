@@ -6,13 +6,13 @@ import (
 	"io"
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // SingleBackupVersion denotes the version of the single static channel backup.

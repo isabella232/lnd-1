@@ -3,8 +3,8 @@ package lnwire
 import (
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/input"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
-	"github.com/indra-labs/lnd/lnd/input"
 )
 
 // Sig is a fixed-sized ECDSA signature. Unlike Bitcoin, we use fixed sized

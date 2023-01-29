@@ -9,12 +9,12 @@ import (
 	"net"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd/feature"
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/netann"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/indra-labs/lnd/lnd/feature"
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/netann"
 	"google.golang.org/grpc"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 )

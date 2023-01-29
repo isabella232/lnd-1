@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnrpc/neutrinorpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/neutrinorpc"
 	"github.com/urfave/cli"
 
 	"strconv"

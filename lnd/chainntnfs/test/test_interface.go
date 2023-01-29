@@ -12,6 +12,12 @@ import (
 	"testing"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/blockcache"
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs/bitcoindnotify"
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs/btcdnotify"
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs/neutrinonotify"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/integration/rpctest"
@@ -20,12 +26,6 @@ import (
 	"github.com/btcsuite/btcwallet/chain"
 	_ "github.com/btcsuite/btcwallet/walletdb/bdb" // Required to auto-register the boltdb walletdb implementation.
 	"github.com/lightninglabs/neutrino"
-	"github.com/indra-labs/lnd/lnd/blockcache"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/chainntnfs/bitcoindnotify"
-	"github.com/indra-labs/lnd/lnd/chainntnfs/btcdnotify"
-	"github.com/indra-labs/lnd/lnd/chainntnfs/neutrinonotify"
-	"github.com/indra-labs/lnd/lnd/channeldb"
 	"github.com/stretchr/testify/require"
 )
 

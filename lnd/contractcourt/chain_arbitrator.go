@@ -7,19 +7,19 @@ import (
 	"sync/atomic"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/clock"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/labels"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/btcsuite/btcwallet/walletdb"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/clock"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/labels"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // ErrChainArbExiting signals that the chain arbitrator is shutting down.

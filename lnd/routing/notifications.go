@@ -7,13 +7,13 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/go-errors/errors"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // TopologyClient represents an intent to receive notifications from the

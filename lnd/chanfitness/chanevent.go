@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/clock"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/clock"
 )
 
 type eventType int

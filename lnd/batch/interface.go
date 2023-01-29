@@ -1,6 +1,6 @@
 package batch
 
-import "github.com/indra-labs/lnd/lnd/kvdb"
+import "git-indra.lan/indra-labs/lnd/lnd/kvdb"
 
 // Request defines an operation that can be batched into a single bbolt
 // transaction.

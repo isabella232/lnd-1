@@ -4,7 +4,7 @@
 package autopilotrpc
 
 import (
-	"github.com/indra-labs/lnd/lnd/autopilot"
+	"git-indra.lan/indra-labs/lnd/lnd/autopilot"
 )
 
 // Config is the primary configuration struct for the autopilot RPC server. It

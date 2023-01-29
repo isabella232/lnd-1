@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 // prefixWithMsgType takes []byte and adds a wire protocol prefix

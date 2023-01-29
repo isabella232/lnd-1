@@ -3,7 +3,7 @@ package wtdb
 import (
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // ChannelSummaries is a map for a given channel id to it's ClientChanSummary.

@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
 )
 
 const (

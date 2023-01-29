@@ -9,10 +9,10 @@ import (
 	"math"
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/tor"
 )
 
 var (

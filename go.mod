@@ -28,7 +28,6 @@ require (
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.15.0
-	github.com/indra-labs/indra v0.1.9
 	github.com/jackc/pgx/v4 v4.17.2
 	github.com/jackpal/gateway v1.0.7
 	github.com/jackpal/go-nat-pmp v1.0.2
@@ -67,6 +66,7 @@ require (
 
 require (
 	4d63.com/gochecknoglobals v0.1.0 // indirect
+	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	github.com/Abirdcfly/dupword v0.0.7 // indirect
 	github.com/Antonboom/errname v0.1.7 // indirect
 	github.com/Antonboom/nilnil v0.1.1 // indirect
@@ -81,6 +81,7 @@ require (
 	github.com/alingse/asasalint v0.0.11 // indirect
 	github.com/ashanbrown/forbidigo v1.3.0 // indirect
 	github.com/ashanbrown/makezero v1.1.1 // indirect
+	github.com/benbjohnson/clock v1.3.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bkielbasa/cyclop v1.2.0 // indirect
 	github.com/blizzy78/varnamelen v0.8.0 // indirect
@@ -145,7 +146,6 @@ require (
 	github.com/golangci/unconvert v0.0.0-20180507085042-28b1c447d1f4 // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/gookit/color v1.5.2 // indirect
 	github.com/gordonklaus/ineffassign v0.0.0-20210914165742-4cc7213b9bc8 // indirect
 	github.com/gostaticanalysis/analysisutil v0.7.1 // indirect
 	github.com/gostaticanalysis/comment v1.4.2 // indirect
@@ -210,6 +210,8 @@ require (
 	github.com/nishanths/exhaustive v0.8.3 // indirect
 	github.com/nishanths/predeclared v0.2.2 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
+	github.com/onsi/ginkgo/v2 v2.5.1 // indirect
+	github.com/onsi/gomega v1.24.0 // indirect
 	github.com/ory/viper v1.7.5 // indirect
 	github.com/pborman/uuid v1.2.0 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect
@@ -243,6 +245,7 @@ require (
 	github.com/soheilhy/cmux v0.1.5 // indirect
 	github.com/sonatard/noctx v0.0.1 // indirect
 	github.com/sourcegraph/go-diff v0.6.1 // indirect
+	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/spf13/afero v1.8.2 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/cobra v1.6.0 // indirect
@@ -269,7 +272,6 @@ require (
 	github.com/xanzy/ssh-agent v0.2.1 // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 	github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2 // indirect
-	github.com/xo/terminfo v0.0.0-20210125001918-ca9a967f8778 // indirect
 	github.com/yagipy/maintidx v1.0.0 // indirect
 	github.com/yeya24/promlinter v0.2.0 // indirect
 	gitlab.com/NebulousLabs/fastrand v0.0.0-20181126182046-603482d69e40 // indirect

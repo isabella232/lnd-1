@@ -1,10 +1,10 @@
 package routing
 
 import (
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/htlcswitch"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 )
 
 // bandwidthHints provides hints about the currently available balance in our

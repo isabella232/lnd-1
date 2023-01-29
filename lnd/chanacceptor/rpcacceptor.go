@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chancloser"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chancloser"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 var (

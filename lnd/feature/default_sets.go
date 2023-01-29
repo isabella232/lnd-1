@@ -1,6 +1,6 @@
 package feature
 
-import "github.com/indra-labs/lnd/lnd/lnwire"
+import "git-indra.lan/indra-labs/lnd/lnd/lnwire"
 
 // setDesc describes which feature bits should be advertised in which feature
 // sets.

@@ -1,12 +1,12 @@
 package mock
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"github.com/btcsuite/btcd/btcec/v2/schnorr"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/txscript"
-	"github.com/indra-labs/lnd/lnd/keychain"
 )
 
 // SecretKeyRing is a mock implementation of the SecretKeyRing interface.

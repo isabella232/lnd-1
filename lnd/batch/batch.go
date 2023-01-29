@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // errSolo is a sentinel error indicating that the requester should re-run the

@@ -1,8 +1,8 @@
 package netann
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
 )
 
 // DB abstracts the required database functionality needed by the

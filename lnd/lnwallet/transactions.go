@@ -4,10 +4,10 @@ import (
 	"encoding/binary"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
 )
 
 const (
@@ -43,7 +43,7 @@ var (
 //
 // In order to spend the HTLC output, the witness for the passed transaction
 // should be:
-//   * <0> <sender sig> <recvr sig> <preimage>
+//   - <0> <sender sig> <recvr sig> <preimage>
 func CreateHtlcSuccessTx(chanType channeldb.ChannelType, initiator bool,
 	htlcOutput wire.OutPoint, htlcAmt btcutil.Amount, csvDelay,
 	leaseExpiry uint32, revocationKey, delayKey *btcec.PublicKey) (

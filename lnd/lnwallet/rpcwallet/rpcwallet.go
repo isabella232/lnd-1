@@ -10,6 +10,16 @@ import (
 	"io/ioutil"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/signrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/walletrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/btcwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"github.com/btcsuite/btcd/btcec/v2/schnorr"
@@ -22,16 +32,6 @@ import (
 	"github.com/btcsuite/btcd/wire"
 	"github.com/btcsuite/btcwallet/waddrmgr"
 	basewallet "github.com/btcsuite/btcwallet/wallet"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/lnrpc/signrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/walletrpc"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/btcwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/macaroons"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"
@@ -387,8 +387,8 @@ func (r *RPCKeyRing) DeriveKey(
 // sha256 of the resulting shared point serialized in compressed format. If k is
 // our private key, and P is the public key, we perform the following operation:
 //
-//  sx := k*P
-//  s := sha256(sx.SerializeCompressed())
+//	sx := k*P
+//	s := sha256(sx.SerializeCompressed())
 //
 // NOTE: This method is part of the keychain.ECDHRing interface.
 func (r *RPCKeyRing) ECDH(keyDesc keychain.KeyDescriptor,

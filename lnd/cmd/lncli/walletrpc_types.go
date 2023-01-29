@@ -1,6 +1,6 @@
 package main
 
-import "github.com/indra-labs/lnd/lnd/lnrpc/walletrpc"
+import "git-indra.lan/indra-labs/lnd/lnd/lnrpc/walletrpc"
 
 // PendingSweep is a CLI-friendly type of the walletrpc.PendingSweep proto. We
 // use this to show more useful string versions of byte slices and enums.

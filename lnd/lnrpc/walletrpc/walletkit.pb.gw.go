@@ -13,9 +13,9 @@ import (
 	"io"
 	"net/http"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/signrpc"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/utilities"
-	"github.com/indra-labs/lnd/lnd/lnrpc/signrpc"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/grpclog"

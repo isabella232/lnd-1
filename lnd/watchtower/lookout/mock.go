@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
 )
 
 type MockBackend struct {

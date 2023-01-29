@@ -1,7 +1,7 @@
 package hop
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // ForwardingInfo contains all the information that is necessary to forward and

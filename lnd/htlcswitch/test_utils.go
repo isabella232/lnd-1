@@ -16,6 +16,22 @@ import (
 	"testing"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/contractcourt"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch/hop"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnpeer"
+	"git-indra.lan/indra-labs/lnd/lnd/lntest/channels"
+	"git-indra.lan/indra-labs/lnd/lnd/lntest/mock"
+	"git-indra.lan/indra-labs/lnd/lnd/lntest/wait"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/shachain"
+	"git-indra.lan/indra-labs/lnd/lnd/ticker"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"github.com/btcsuite/btcd/btcutil"
@@ -23,22 +39,6 @@ import (
 	"github.com/btcsuite/btcd/wire"
 	"github.com/go-errors/errors"
 	sphinx "github.com/lightningnetwork/lightning-onion"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/contractcourt"
-	"github.com/indra-labs/lnd/lnd/htlcswitch/hop"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lnpeer"
-	"github.com/indra-labs/lnd/lnd/lntest/channels"
-	"github.com/indra-labs/lnd/lnd/lntest/mock"
-	"github.com/indra-labs/lnd/lnd/lntest/wait"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/shachain"
-	"github.com/indra-labs/lnd/lnd/ticker"
 	"github.com/stretchr/testify/require"
 )
 
@@ -941,13 +941,14 @@ func createClusterChannels(aliceToBob, bobToCarol btcutil.Amount) (
 // newThreeHopNetwork function creates the following topology and returns the
 // control object to manage this cluster:
 //
-//	alice			   bob				   carol
-//	server - <-connection-> - server - - <-connection-> - - - server
-//	 |		   	  |				   |
-//   alice htlc			bob htlc		    carol htlc
-//     switch			switch	\		    switch
-//	|			 |       \			|
-//	|			 |        \			|
+//		alice			   bob				   carol
+//		server - <-connection-> - server - - <-connection-> - - - server
+//		 |		   	  |				   |
+//	  alice htlc			bob htlc		    carol htlc
+//	    switch			switch	\		    switch
+//		|			 |       \			|
+//		|			 |        \			|
+//
 // alice                   first bob    second bob              carol
 // channel link	    	  channel link   channel link		channel link
 //
@@ -1210,16 +1211,16 @@ type twoHopNetwork struct {
 // newTwoHopNetwork function creates the following topology and returns the
 // control object to manage this cluster:
 //
-//	alice			   bob
-//	server - <-connection-> - server
-//	 |		   	    |
-//   alice htlc		  	 bob htlc
-//     switch			 switch
-//	|			    |
-//	|			    |
+//		alice			   bob
+//		server - <-connection-> - server
+//		 |		   	    |
+//	  alice htlc		  	 bob htlc
+//	    switch			 switch
+//		|			    |
+//		|			    |
+//
 // alice                           bob
 // channel link	    	       channel link
-//
 func newTwoHopNetwork(t testing.TB,
 	aliceChannel, bobChannel *lnwallet.LightningChannel,
 	startingHeight uint32) *twoHopNetwork {

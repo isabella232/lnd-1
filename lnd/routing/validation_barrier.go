@@ -3,9 +3,9 @@ package routing
 import (
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 )
 
 // validationSignals contains two signals which allows the ValidationBarrier to

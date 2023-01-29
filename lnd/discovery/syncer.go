@@ -10,9 +10,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnpeer"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/lnpeer"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 	"golang.org/x/time/rate"
 )
 

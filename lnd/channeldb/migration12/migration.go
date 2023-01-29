@@ -3,8 +3,8 @@ package migration12
 import (
 	"bytes"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 var emptyFeatures = lnwire.NewFeatureVector(nil, nil)

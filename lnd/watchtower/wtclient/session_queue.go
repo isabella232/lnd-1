@@ -6,14 +6,14 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 // reserveStatus is an enum that signals how full a particular session is.

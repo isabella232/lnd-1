@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/kvdb/etcd"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb/etcd"
 )
 
 // makeEtcdElector will construct a new etcdLeaderElector. It expects a cancel

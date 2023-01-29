@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package chainrpc;
 
-option go_package = "github.com/indra-labs/lnd/lnd/lnrpc/chainrpc";
+option go_package = "git-indra.lan/indra-labs/lnd/lnd/lnrpc/chainrpc";
 
 // ChainNotifier is a service that can be used to get information about the
 // chain backend by registering notifiers for chain events.

@@ -3,7 +3,7 @@ package pool
 import (
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/queue"
+	"git-indra.lan/indra-labs/lnd/lnd/queue"
 )
 
 // Recycler is an interface that allows an object to be reclaimed without

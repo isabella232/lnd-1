@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // MakeDB creates a new instance of the ChannelDB for testing purposes. A

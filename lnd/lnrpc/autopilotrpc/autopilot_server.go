@@ -8,10 +8,10 @@ import (
 	"encoding/hex"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd/autopilot"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/indra-labs/lnd/lnd/autopilot"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
 	"google.golang.org/grpc"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 )

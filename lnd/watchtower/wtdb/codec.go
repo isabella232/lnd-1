@@ -3,10 +3,10 @@ package wtdb
 import (
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtpolicy"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtpolicy"
 )
 
 // UnknownElementType is an alias for channeldb.UnknownElementType.

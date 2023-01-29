@@ -12,12 +12,12 @@ import (
 	"path/filepath"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/macaroons"
 	"google.golang.org/grpc"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 )

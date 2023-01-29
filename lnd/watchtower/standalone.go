@@ -4,11 +4,11 @@ import (
 	"net"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd/brontide"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/lookout"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/indra-labs/lnd/lnd/brontide"
-	"github.com/indra-labs/lnd/lnd/tor"
-	"github.com/indra-labs/lnd/lnd/watchtower/lookout"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
 )
 
 // Standalone encapsulates the server-side functionality required by watchtower

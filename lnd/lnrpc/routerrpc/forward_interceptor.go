@@ -3,11 +3,11 @@ package routerrpc
 import (
 	"errors"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/htlcswitch"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

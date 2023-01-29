@@ -3,8 +3,8 @@ package migration29
 import (
 	"bytes"
 
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/kvdb"
 )
 
 var (

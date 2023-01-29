@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // TimeScheduler is a batching engine that executes requests within a fixed

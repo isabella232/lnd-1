@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/build"
-	"github.com/indra-labs/lnd/lnd/lnrpc/lnclipb"
-	"github.com/indra-labs/lnd/lnd/lnrpc/verrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/lnclipb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/verrpc"
 	"github.com/urfave/cli"
 )
 

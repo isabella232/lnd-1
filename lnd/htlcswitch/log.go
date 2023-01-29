@@ -1,9 +1,9 @@
 package htlcswitch
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch/hop"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/build"
-	"github.com/indra-labs/lnd/lnd/htlcswitch/hop"
 )
 
 // log is a logger that is initialized with no output filters.  This

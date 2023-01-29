@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package lnrpc;
 
-option go_package = "github.com/indra-labs/lnd/lnd/lnrpc";
+option go_package = "git-indra.lan/indra-labs/lnd/lnd/lnrpc";
 
 /*
  * Comments in this file will be directly parsed into the API

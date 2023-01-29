@@ -5,12 +5,12 @@ import (
 	"encoding/binary"
 	"io"
 
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/keychain"
 )
 
 // CircuitKey is used by a channel to uniquely identify the HTLCs it receives

@@ -15,14 +15,14 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/channelnotifier"
+	"git-indra.lan/indra-labs/lnd/lnd/clock"
+	"git-indra.lan/indra-labs/lnd/lnd/peernotifier"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/subscribe"
+	"git-indra.lan/indra-labs/lnd/lnd/ticker"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/channelnotifier"
-	"github.com/indra-labs/lnd/lnd/clock"
-	"github.com/indra-labs/lnd/lnd/peernotifier"
-	"github.com/indra-labs/lnd/lnd/routing/route"
-	"github.com/indra-labs/lnd/lnd/subscribe"
-	"github.com/indra-labs/lnd/lnd/ticker"
 )
 
 const (

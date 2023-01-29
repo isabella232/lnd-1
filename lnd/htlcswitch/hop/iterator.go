@@ -6,9 +6,9 @@ import (
 	"io"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	sphinx "github.com/lightningnetwork/lightning-onion"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // Iterator is an interface that abstracts away the routing information

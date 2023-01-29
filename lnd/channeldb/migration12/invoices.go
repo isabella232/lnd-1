@@ -6,10 +6,10 @@ import (
 	"io"
 	"time"
 
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	"github.com/btcsuite/btcd/wire"
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 const (

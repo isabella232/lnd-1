@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnrpc/watchtowerrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/watchtowerrpc"
 	"github.com/urfave/cli"
 )
 

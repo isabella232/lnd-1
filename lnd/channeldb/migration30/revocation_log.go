@@ -6,15 +6,15 @@ import (
 	"io"
 	"math"
 
-	mig24 "github.com/indra-labs/lnd/lnd/channeldb/migration24"
-	mig25 "github.com/indra-labs/lnd/lnd/channeldb/migration25"
-	mig26 "github.com/indra-labs/lnd/lnd/channeldb/migration26"
-	mig "github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
+	mig24 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration24"
+	mig25 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration25"
+	mig26 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration26"
+	mig "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
 
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	"github.com/btcsuite/btcd/btcutil"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 // OutputIndexEmpty is used when the output index doesn't exist.
@@ -60,10 +60,10 @@ var (
 // The actual size of each HTLCEntry varies based on its RHash and Amt(sat),
 // summarized as follows,
 //
-//   | RHash empty | Amt<=252 | Amt<=65,535 | Amt<=4,294,967,295 | otherwise |
-//   |:-----------:|:--------:|:-----------:|:------------------:|:---------:|
-//   |     true    |    19    |      21     |         23         |     26    |
-//   |     false   |    51    |      53     |         55         |     58    |
+//	| RHash empty | Amt<=252 | Amt<=65,535 | Amt<=4,294,967,295 | otherwise |
+//	|:-----------:|:--------:|:-----------:|:------------------:|:---------:|
+//	|     true    |    19    |      21     |         23         |     26    |
+//	|     false   |    51    |      53     |         55         |     58    |
 //
 // So the size varies from 19 bytes to 58 bytes, where most likely to be 23 or
 // 55 bytes.

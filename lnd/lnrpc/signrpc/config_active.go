@@ -4,9 +4,9 @@
 package signrpc
 
 import (
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/macaroons"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
 )
 
 // Config is the primary configuration struct for the signer RPC server. It

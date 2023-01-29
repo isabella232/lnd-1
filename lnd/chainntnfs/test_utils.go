@@ -14,6 +14,8 @@ import (
 	"testing"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntest/wait"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcjson"
 	"github.com/btcsuite/btcd/btcutil"
@@ -25,8 +27,6 @@ import (
 	"github.com/btcsuite/btcwallet/chain"
 	"github.com/btcsuite/btcwallet/walletdb"
 	"github.com/lightninglabs/neutrino"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lntest/wait"
 	"github.com/stretchr/testify/require"
 )
 

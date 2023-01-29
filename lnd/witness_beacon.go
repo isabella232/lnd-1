@@ -3,12 +3,12 @@ package lnd
 import (
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/contractcourt"
-	"github.com/indra-labs/lnd/lnd/htlcswitch"
-	"github.com/indra-labs/lnd/lnd/htlcswitch/hop"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/contractcourt"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch/hop"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // preimageSubscriber reprints an active subscription to be notified once the

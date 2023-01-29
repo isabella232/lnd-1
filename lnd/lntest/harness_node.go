@@ -17,22 +17,22 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chanbackup"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/chainrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/invoicesrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/peersrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/routerrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/signrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/walletrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/watchtowerrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/wtclientrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lntest/wait"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/jackc/pgx/v4/pgxpool"
-	"github.com/indra-labs/lnd/lnd/chanbackup"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/chainrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/invoicesrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/peersrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/routerrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/signrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/walletrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/watchtowerrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/wtclientrpc"
-	"github.com/indra-labs/lnd/lnd/lntest/wait"
-	"github.com/indra-labs/lnd/lnd/macaroons"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"
@@ -288,17 +288,18 @@ func (cfg *BaseNodeConfig) GenArgs() []string {
 
 // policyUpdateMap defines a type to store channel policy updates. It has the
 // format,
-// {
-//  "chanPoint1": {
-//       "advertisingNode1": [
-//              policy1, policy2, ...
-//       ],
-//       "advertisingNode2": [
-//              policy1, policy2, ...
-//       ]
-//  },
-//  "chanPoint2": ...
-// }.
+//
+//	{
+//	 "chanPoint1": {
+//	      "advertisingNode1": [
+//	             policy1, policy2, ...
+//	      ],
+//	      "advertisingNode2": [
+//	             policy1, policy2, ...
+//	      ]
+//	 },
+//	 "chanPoint2": ...
+//	}.
 type policyUpdateMap map[string]map[string][]*lnrpc.RoutingPolicy
 
 // HarnessNode represents an instance of lnd running within our test network

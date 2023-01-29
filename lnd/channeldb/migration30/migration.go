@@ -7,10 +7,10 @@ import (
 	"math"
 	"sync"
 
-	mig24 "github.com/indra-labs/lnd/lnd/channeldb/migration24"
-	mig26 "github.com/indra-labs/lnd/lnd/channeldb/migration26"
-	mig "github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	mig24 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration24"
+	mig26 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration26"
+	mig "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // recordsPerTx specifies the number of records to be migrated in each database

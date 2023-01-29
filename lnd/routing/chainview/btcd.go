@@ -7,13 +7,13 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd/blockcache"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
 	"github.com/btcsuite/btcd/btcjson"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/rpcclient"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/blockcache"
-	"github.com/indra-labs/lnd/lnd/channeldb"
 )
 
 // BtcdFilteredChainView is an implementation of the FilteredChainView

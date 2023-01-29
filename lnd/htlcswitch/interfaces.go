@@ -1,15 +1,15 @@
 package htlcswitch
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/invoices"
+	"git-indra.lan/indra-labs/lnd/lnd/lnpeer"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/record"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/invoices"
-	"github.com/indra-labs/lnd/lnd/lnpeer"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/record"
 )
 
 // InvoiceDatabase is an interface which represents the persistent subsystem
@@ -142,20 +142,19 @@ type ChannelUpdateHandler interface {
 // incoming htlc requests, applying the changes to the channel, and also
 // propagating/forwarding it to htlc switch.
 //
-//  abstraction level
-//       ^
-//       |
-//       | - - - - - - - - - - - - Lightning - - - - - - - - - - - - -
-//       |
-//       | (Switch)		     (Switch)		       (Switch)
-//       |  Alice <-- channel link --> Bob <-- channel link --> Carol
-//       |
-//       | - - - - - - - - - - - - - TCP - - - - - - - - - - - - - - -
-//       |
-//       |  (Peer) 		     (Peer)	                (Peer)
-//       |  Alice <----- tcp conn --> Bob <---- tcp conn -----> Carol
-//       |
-//
+//	abstraction level
+//	     ^
+//	     |
+//	     | - - - - - - - - - - - - Lightning - - - - - - - - - - - - -
+//	     |
+//	     | (Switch)		     (Switch)		       (Switch)
+//	     |  Alice <-- channel link --> Bob <-- channel link --> Carol
+//	     |
+//	     | - - - - - - - - - - - - - TCP - - - - - - - - - - - - - - -
+//	     |
+//	     |  (Peer) 		     (Peer)	                (Peer)
+//	     |  Alice <----- tcp conn --> Bob <---- tcp conn -----> Carol
+//	     |
 type ChannelLink interface {
 	// TODO(roasbeef): modify interface to embed mail boxes?
 

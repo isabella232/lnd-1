@@ -1,8 +1,8 @@
 package routerrpc
 
 import (
-	"github.com/indra-labs/lnd/lnd/macaroons"
-	"github.com/indra-labs/lnd/lnd/routing"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
+	"git-indra.lan/indra-labs/lnd/lnd/routing"
 )
 
 // Config is the main configuration file for the router RPC server. It contains

@@ -14,7 +14,7 @@ import (
 	"path"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/healthcheck"
+	"git-indra.lan/indra-labs/lnd/lnd/healthcheck"
 	"go.etcd.io/bbolt"
 )
 

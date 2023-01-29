@@ -1,8 +1,8 @@
 package lookout
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/labels"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/labels"
 )
 
 // PunisherConfig houses the resources required by the Punisher.

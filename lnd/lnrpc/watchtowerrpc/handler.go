@@ -8,8 +8,8 @@ import (
 	"errors"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
 	"google.golang.org/grpc"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 )

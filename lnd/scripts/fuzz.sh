@@ -15,7 +15,7 @@ function build_fuzz() {
 
       NAME=$(echo $file | sed 's/\.go$//1')
       echo "Building zip file for $pkg/$NAME"
-      go-fuzz-build -func "Fuzz_$NAME" -o "$pkg-$NAME-fuzz.zip" "github.com/indra-labs/lnd/lnd/fuzz/$pkg"
+      go-fuzz-build -func "Fuzz_$NAME" -o "$pkg-$NAME-fuzz.zip" "git-indra.lan/indra-labs/lnd/lnd/fuzz/$pkg"
     done
 
     popd

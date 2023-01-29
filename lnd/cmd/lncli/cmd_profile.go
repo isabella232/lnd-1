@@ -7,8 +7,8 @@ import (
 	"path"
 	"strings"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
 	"github.com/btcsuite/btcd/btcutil"
-	"github.com/indra-labs/lnd/lnd/lncfg"
 	"github.com/urfave/cli"
 	"gopkg.in/macaroon.v2"
 )

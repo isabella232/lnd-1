@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/indra-labs/lnd/lnd/cluster"
+	"git-indra.lan/indra-labs/lnd/lnd/cluster"
 )
 
 const (

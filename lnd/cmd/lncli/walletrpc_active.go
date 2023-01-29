@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"sort"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/walletrpc"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/walletrpc"
 	"github.com/urfave/cli"
 )
 

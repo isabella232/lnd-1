@@ -4,8 +4,8 @@
 package devrpc
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
 	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/indra-labs/lnd/lnd/channeldb"
 )
 
 // Config is the primary configuration struct for the DEV RPC server. It

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 )
 
 var (

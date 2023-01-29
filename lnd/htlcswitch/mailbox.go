@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/clock"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/clock"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 var (

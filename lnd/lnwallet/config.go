@@ -1,12 +1,12 @@
 package lnwallet
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
 	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
 )
 
 // Config is a struct which houses configuration parameters which modify the

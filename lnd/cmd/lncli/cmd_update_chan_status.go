@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc/routerrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/routerrpc"
 	"github.com/urfave/cli"
 )
 

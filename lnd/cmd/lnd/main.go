@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
+	"git-indra.lan/indra-labs/lnd/lnd"
+	"git-indra.lan/indra-labs/lnd/lnd/signal"
 	"github.com/jessevdk/go-flags"
-	"github.com/indra-labs/lnd/lnd"
-	"github.com/indra-labs/lnd/lnd/signal"
 )
 
 func main() {

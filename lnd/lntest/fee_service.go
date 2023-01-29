@@ -9,7 +9,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
 )
 
 const (

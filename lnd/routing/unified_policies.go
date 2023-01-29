@@ -1,10 +1,10 @@
 package routing
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 	"github.com/btcsuite/btcd/btcutil"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
 )
 
 // unifiedPolicies holds all unified policies for connections towards a node.

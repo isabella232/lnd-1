@@ -3,8 +3,8 @@ package channeldb
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
 )
 
 var (
@@ -58,7 +58,7 @@ var (
 // use this cache to detect duplicate witnesses.
 //
 // TODO(roasbeef): need expiry policy?
-//  * encrypt?
+//   - encrypt?
 type WitnessCache struct {
 	db *DB
 }

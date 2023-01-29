@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	mig25 "github.com/indra-labs/lnd/lnd/channeldb/migration25"
+	mig25 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration25"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 var (

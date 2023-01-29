@@ -1,7 +1,7 @@
 package buffer
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // WriteSize represents the size of the maximum plaintext message than can be

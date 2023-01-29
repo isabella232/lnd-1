@@ -1,7 +1,7 @@
 package buffer
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // ReadSize represents the size of the maximum message that can be read off the

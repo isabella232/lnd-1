@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // MultiBackupVersion denotes the version of the multi channel static channel

@@ -6,7 +6,7 @@ package kvdb
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/kvdb/etcd"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb/etcd"
 )
 
 // TestBackend is conditionally set to bdb when the kvdb_etcd build tag is

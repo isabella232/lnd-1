@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strconv"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/routerrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 	"github.com/btcsuite/btcd/btcutil"
-	"github.com/indra-labs/lnd/lnd/lnrpc/routerrpc"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
 	"github.com/urfave/cli"
 )
 

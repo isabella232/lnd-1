@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc/routerrpc"
-	"github.com/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/routerrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 	"github.com/urfave/cli"
 )
 

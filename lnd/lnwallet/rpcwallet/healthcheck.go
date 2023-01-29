@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
 )
 
 // HealthCheck returns a health check function for the given remote signing

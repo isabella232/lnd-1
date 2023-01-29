@@ -7,14 +7,14 @@ import (
 	"io"
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/shachain"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/shachain"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 // writeOutpoint writes an outpoint to the passed writer using the minimal

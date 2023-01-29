@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/ticker"
+	"git-indra.lan/indra-labs/lnd/lnd/ticker"
 )
 
 // GCQueue is garbage collecting queue, which dynamically grows and contracts

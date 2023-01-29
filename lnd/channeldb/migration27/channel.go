@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"fmt"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	mig25 "github.com/indra-labs/lnd/lnd/channeldb/migration25"
-	mig26 "github.com/indra-labs/lnd/lnd/channeldb/migration26"
-	mig "github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/tlv"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	mig25 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration25"
+	mig26 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration26"
+	mig "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 )
 
 const (

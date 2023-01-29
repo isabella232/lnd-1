@@ -7,9 +7,9 @@ import (
 	"io"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/go-errors/errors"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 var (

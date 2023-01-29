@@ -5,12 +5,12 @@ import (
 	"net"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/lookout"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/tor"
-	"github.com/indra-labs/lnd/lnd/watchtower/lookout"
 )
 
 const (

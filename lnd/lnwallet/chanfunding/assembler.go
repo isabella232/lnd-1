@@ -1,9 +1,9 @@
 package chanfunding
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
 )
 
 // CoinSource is an interface that allows a caller to access a source of UTXOs

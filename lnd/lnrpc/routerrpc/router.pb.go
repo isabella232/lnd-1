@@ -7,7 +7,7 @@
 package routerrpc
 
 import (
-	lnrpc "github.com/indra-labs/lnd/lnd/lnrpc"
+	lnrpc "git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -1976,13 +1976,12 @@ func (*SubscribeHtlcEventsRequest) Descriptor() ([]byte, []int) {
 	return file_routerrpc_router_proto_rawDescGZIP(), []int{23}
 }
 
-//
-//HtlcEvent contains the htlc event that was processed. These are served on a
-//best-effort basis; events are not persisted, delivery is not guaranteed
-//(in the event of a crash in the switch, forward events may be lost) and
-//some events may be replayed upon restart. Events consumed from this package
-//should be de-duplicated by the htlc's unique combination of incoming and
-//outgoing channel id and htlc id. [EXPERIMENTAL]
+// HtlcEvent contains the htlc event that was processed. These are served on a
+// best-effort basis; events are not persisted, delivery is not guaranteed
+// (in the event of a crash in the switch, forward events may be lost) and
+// some events may be replayed upon restart. Events consumed from this package
+// should be de-duplicated by the htlc's unique combination of incoming and
+// outgoing channel id and htlc id. [EXPERIMENTAL]
 type HtlcEvent struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -2695,12 +2694,12 @@ func (x *ForwardHtlcInterceptRequest) GetOnionBlob() []byte {
 	return nil
 }
 
-//*
-//ForwardHtlcInterceptResponse enables the caller to resolve a previously hold
-//forward. The caller can choose either to:
-//- `Resume`: Execute the default behavior (usually forward).
-//- `Reject`: Fail the htlc backwards.
-//- `Settle`: Settle this htlc with a given preimage.
+// *
+// ForwardHtlcInterceptResponse enables the caller to resolve a previously hold
+// forward. The caller can choose either to:
+// - `Resume`: Execute the default behavior (usually forward).
+// - `Reject`: Fail the htlc backwards.
+// - `Settle`: Settle this htlc with a given preimage.
 type ForwardHtlcInterceptResponse struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache

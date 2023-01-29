@@ -1,8 +1,8 @@
 package chainreg
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/build"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/build"
 )
 
 // Subsystem defines the logging code for this subsystem.

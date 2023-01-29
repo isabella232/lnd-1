@@ -4,7 +4,7 @@ package invoicesrpc
 
 import (
 	context "context"
-	lnrpc "github.com/indra-labs/lnd/lnd/lnrpc"
+	lnrpc "git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"

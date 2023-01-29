@@ -5,15 +5,15 @@ import (
 	"net"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chanfunding"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chanfunding"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // CommitmentType is an enum indicating the commitment type we should use for
@@ -137,25 +137,25 @@ func (c *ChannelContribution) toChanConfig() channeldb.ChannelConfig {
 // The reservation workflow consists of the following three steps:
 //  1. lnwallet.InitChannelReservation
 //     * One requests the wallet to allocate the necessary resources for a
-//       channel reservation. These resources are put in limbo for the lifetime
-//       of a reservation.
+//     channel reservation. These resources are put in limbo for the lifetime
+//     of a reservation.
 //     * Once completed the reservation will have the wallet's contribution
-//       accessible via the .OurContribution() method. This contribution
-//       contains the necessary items to allow the remote party to build both
-//       the funding, and commitment transactions.
+//     accessible via the .OurContribution() method. This contribution
+//     contains the necessary items to allow the remote party to build both
+//     the funding, and commitment transactions.
 //  2. ChannelReservation.ProcessContribution/ChannelReservation.ProcessSingleContribution
 //     * The counterparty presents their contribution to the payment channel.
-//       This allows us to build the funding, and commitment transactions
-//       ourselves.
+//     This allows us to build the funding, and commitment transactions
+//     ourselves.
 //     * We're now able to sign our inputs to the funding transactions, and
-//       the counterparty's version of the commitment transaction.
+//     the counterparty's version of the commitment transaction.
 //     * All signatures crafted by us, are now available via .OurSignatures().
 //  3. ChannelReservation.CompleteReservation/ChannelReservation.CompleteReservationSingle
 //     * The final step in the workflow. The counterparty presents the
-//       signatures for all their inputs to the funding transaction, as well
-//       as a signature to our version of the commitment transaction.
+//     signatures for all their inputs to the funding transaction, as well
+//     as a signature to our version of the commitment transaction.
 //     * We then verify the validity of all signatures before considering the
-//       channel "open".
+//     channel "open".
 type ChannelReservation struct {
 	// This mutex MUST be held when either reading or modifying any of the
 	// fields below.

@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"io"
 
+	"git-indra.lan/indra-labs/lnd/lnd/shachain"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/shachain"
 	"github.com/stretchr/testify/mock"
 )
 

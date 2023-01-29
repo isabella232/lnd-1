@@ -1,6 +1,6 @@
 package migration_01_to_11
 
-import "github.com/indra-labs/lnd/lnd/kvdb"
+import "git-indra.lan/indra-labs/lnd/lnd/kvdb"
 
 // fetchPaymentStatus fetches the payment status of the payment. If the payment
 // isn't found, it will default to "StatusUnknown".

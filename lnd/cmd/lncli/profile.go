@@ -10,9 +10,9 @@ import (
 	"path"
 	"strings"
 
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/walletunlocker"
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/walletunlocker"
 	"github.com/urfave/cli"
 	"gopkg.in/macaroon.v2"
 )

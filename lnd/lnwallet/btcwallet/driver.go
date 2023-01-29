@@ -3,9 +3,9 @@ package btcwallet
 import (
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/blockcache"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
 	"github.com/btcsuite/btcwallet/chain"
-	"github.com/indra-labs/lnd/lnd/blockcache"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
 )
 
 const (

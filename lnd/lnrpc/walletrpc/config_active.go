@@ -4,12 +4,12 @@
 package walletrpc
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
+	"git-indra.lan/indra-labs/lnd/lnd/sweep"
 	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/macaroons"
-	"github.com/indra-labs/lnd/lnd/sweep"
 )
 
 const (

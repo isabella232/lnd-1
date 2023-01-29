@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/blockcache"
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
 	"github.com/lightninglabs/neutrino"
-	"github.com/indra-labs/lnd/lnd/blockcache"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
 )
 
 // createNewNotifier creates a new instance of the ChainNotifier interface

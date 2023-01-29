@@ -7,9 +7,9 @@ import (
 	"io"
 	"sort"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lntypes"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
 )
 
 var (

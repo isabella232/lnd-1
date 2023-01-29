@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"io"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/record"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	sphinx "github.com/lightningnetwork/lightning-onion"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/record"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 // PayloadViolation is an enum encapsulating the possible invalid payload

@@ -8,13 +8,13 @@ import (
 	"strings"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/btcutil/bech32"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // Decode parses the provided encoded invoice and returns a decoded Invoice if

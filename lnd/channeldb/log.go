@@ -1,16 +1,16 @@
 package channeldb
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	mig "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration12"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration13"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration16"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration24"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration30"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/build"
-	mig "github.com/indra-labs/lnd/lnd/channeldb/migration"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration12"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration13"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration16"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration24"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration30"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
-	"github.com/indra-labs/lnd/lnd/kvdb"
 )
 
 // log is a logger that is initialized with no output filters.  This

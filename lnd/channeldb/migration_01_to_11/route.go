@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"strings"
 
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/record"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	"github.com/btcsuite/btcd/btcec/v2"
 	sphinx "github.com/lightningnetwork/lightning-onion"
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/record"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 // VertexSize is the size of the array to store a vertex.

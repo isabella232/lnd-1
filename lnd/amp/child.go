@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
 )
 
 // Share represents an n-of-n sharing of a secret 32-byte value. The secret can

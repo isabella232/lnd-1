@@ -3,7 +3,7 @@ package feature
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // Config houses any runtime modifications to the default set descriptors. For

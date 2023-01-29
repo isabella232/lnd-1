@@ -19,29 +19,29 @@ import (
 	"strings"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/autopilot"
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	"git-indra.lan/indra-labs/lnd/lnd/chainreg"
+	"git-indra.lan/indra-labs/lnd/lnd/chanbackup"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/discovery"
+	"git-indra.lan/indra-labs/lnd/lnd/funding"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch/hodl"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/peersrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/routerrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/signrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/routing"
+	"git-indra.lan/indra-labs/lnd/lnd/signal"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg"
 	flags "github.com/jessevdk/go-flags"
 	"github.com/lightninglabs/neutrino"
-	"github.com/indra-labs/lnd/lnd/autopilot"
-	"github.com/indra-labs/lnd/lnd/build"
-	"github.com/indra-labs/lnd/lnd/chainreg"
-	"github.com/indra-labs/lnd/lnd/chanbackup"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/discovery"
-	"github.com/indra-labs/lnd/lnd/funding"
-	"github.com/indra-labs/lnd/lnd/htlcswitch"
-	"github.com/indra-labs/lnd/lnd/htlcswitch/hodl"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/peersrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/routerrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/signrpc"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/routing"
-	"github.com/indra-labs/lnd/lnd/signal"
-	"github.com/indra-labs/lnd/lnd/tor"
 )
 
 const (
@@ -642,10 +642,10 @@ func DefaultConfig() Config {
 // line options.
 //
 // The configuration proceeds as follows:
-// 	1) Start with a default config with sane settings
-// 	2) Pre-parse the command line to check for an alternative config file
-// 	3) Load configuration file overwriting defaults with any specified options
-// 	4) Parse CLI options and overwrite/add any specified options
+//  1. Start with a default config with sane settings
+//  2. Pre-parse the command line to check for an alternative config file
+//  3. Load configuration file overwriting defaults with any specified options
+//  4. Parse CLI options and overwrite/add any specified options
 func LoadConfig(interceptor signal.Interceptor) (*Config, error) {
 	// Pre-parse the command line options to pick up an alternative config
 	// file.

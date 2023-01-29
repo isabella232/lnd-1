@@ -3,7 +3,7 @@ package routing
 import (
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 )
 
 // missionControlState is an object that manages the internal mission control

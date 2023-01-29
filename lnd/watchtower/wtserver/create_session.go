@@ -1,11 +1,11 @@
 package wtserver
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtpolicy"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 	"github.com/btcsuite/btcd/txscript"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtpolicy"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 // handleCreateSession processes a CreateSession message from the peer, and returns

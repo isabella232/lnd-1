@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/htlcswitch"
-	"github.com/indra-labs/lnd/lnd/invoices"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/htlcswitch"
+	"git-indra.lan/indra-labs/lnd/lnd/invoices"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 )
 
 // rpcHtlcEvent returns a rpc htlc event from a htlcswitch event.

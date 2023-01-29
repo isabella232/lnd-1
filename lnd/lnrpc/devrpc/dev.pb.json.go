@@ -6,8 +6,8 @@ package devrpc
 import (
 	"context"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	gateway "github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/encoding/protojson"
 )

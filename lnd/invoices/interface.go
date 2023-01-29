@@ -1,7 +1,7 @@
 package invoices
 
 import (
-	"github.com/indra-labs/lnd/lnd/record"
+	"git-indra.lan/indra-labs/lnd/lnd/record"
 )
 
 // Payload abstracts access to any additional fields provided in the final hop's

@@ -5,11 +5,11 @@ import (
 	"encoding/binary"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/btcutil/bech32"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // Encode takes the given MessageSigner and returns a string encoding this

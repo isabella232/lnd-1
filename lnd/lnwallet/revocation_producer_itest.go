@@ -4,9 +4,9 @@
 package lnwallet
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/shachain"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/shachain"
 )
 
 // nextRevocationProducer creates a new revocation producer, deriving the

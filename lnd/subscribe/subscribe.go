@@ -5,7 +5,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/indra-labs/lnd/lnd/queue"
+	"git-indra.lan/indra-labs/lnd/lnd/queue"
 )
 
 // ErrServerShuttingDown is an error returned in case the server is in the

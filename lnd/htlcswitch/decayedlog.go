@@ -8,9 +8,9 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 	sphinx "github.com/lightningnetwork/lightning-onion"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/kvdb"
 )
 
 const (

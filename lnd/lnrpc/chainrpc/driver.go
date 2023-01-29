@@ -6,7 +6,7 @@ package chainrpc
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 )
 
 // createNewSubServer is a helper method that will create the new chain notifier

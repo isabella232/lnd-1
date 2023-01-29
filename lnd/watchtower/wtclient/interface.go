@@ -3,13 +3,13 @@ package wtclient
 import (
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/tor"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
 )
 
 // DB abstracts the required database operations required by the watchtower

@@ -4,8 +4,8 @@
 package zpay32fuzz
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/zpay32"
 	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/indra-labs/lnd/lnd/zpay32"
 )
 
 // Fuzz_decode is used by go-fuzz.

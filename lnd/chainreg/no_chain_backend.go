@@ -4,15 +4,15 @@ import (
 	"errors"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/chainview"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/btcsuite/btcwallet/chain"
 	"github.com/btcsuite/btcwallet/waddrmgr"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/routing/chainview"
 )
 
 var (
@@ -40,9 +40,9 @@ var (
 )
 
 // NoChainBackend is a mock implementation of the following interfaces:
-//  - chainview.FilteredChainView
-//  - chainntnfs.ChainNotifier
-//  - chainfee.Estimator
+//   - chainview.FilteredChainView
+//   - chainntnfs.ChainNotifier
+//   - chainfee.Estimator
 type NoChainBackend struct {
 }
 

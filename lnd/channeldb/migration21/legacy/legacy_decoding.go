@@ -6,9 +6,9 @@ import (
 	"errors"
 	"io"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration21/common"
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration21/common"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 func deserializeHtlcs(r io.Reader) ([]common.HTLC, error) {

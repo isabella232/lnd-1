@@ -6,7 +6,7 @@ package monitoring
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
 	"google.golang.org/grpc"
 )
 

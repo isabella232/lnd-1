@@ -1,8 +1,8 @@
 package routerrpc
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/build"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/build"
 )
 
 // log is a logger that is initialized with no output filters. This

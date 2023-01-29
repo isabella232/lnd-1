@@ -6,9 +6,9 @@ import (
 	"net"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/kvdb"
 )
 
 var (
@@ -29,7 +29,7 @@ var (
 //
 // TODO(roasbeef): also add current OnionKey plus rotation schedule?
 // TODO(roasbeef): add bitfield for supported services
-//  * possibly add a wire.NetAddress type, type
+//   - possibly add a wire.NetAddress type, type
 type LinkNode struct {
 	// Network indicates the Bitcoin network that the LinkNode advertises
 	// for incoming channel creation.

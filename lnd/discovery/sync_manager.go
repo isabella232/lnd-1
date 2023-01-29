@@ -6,11 +6,11 @@ import (
 	"sync/atomic"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnpeer"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/ticker"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/lnpeer"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
-	"github.com/indra-labs/lnd/lnd/ticker"
 )
 
 const (
@@ -202,8 +202,8 @@ func (m *SyncManager) Stop() {
 // 2. Finding new peers to receive graph updates from to ensure we don't only
 //    receive them from the same set of peers.
 
-// 3. Finding new peers to force a historical sync with to ensure we have as
-//    much of the public network as possible.
+//  3. Finding new peers to force a historical sync with to ensure we have as
+//     much of the public network as possible.
 //
 // NOTE: This must be run as a goroutine.
 func (m *SyncManager) syncerHandler() {

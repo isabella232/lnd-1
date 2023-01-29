@@ -3,13 +3,13 @@ package migration30
 import (
 	"bytes"
 
-	mig25 "github.com/indra-labs/lnd/lnd/channeldb/migration25"
-	mig26 "github.com/indra-labs/lnd/lnd/channeldb/migration26"
-	mig "github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
+	mig25 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration25"
+	mig26 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration26"
+	mig "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
 
+	"git-indra.lan/indra-labs/lnd/lnd/input"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/input"
 )
 
 // CommitmentKeyRing holds all derived keys needed to construct commitment and

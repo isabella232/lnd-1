@@ -7,9 +7,9 @@ import (
 	"os"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/keychain"
 )
 
 // Swapper is an interface that allows the chanbackup.SubSwapper to update the

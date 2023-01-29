@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"strings"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	mig24 "github.com/indra-labs/lnd/lnd/channeldb/migration24"
-	mig "github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/tlv"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	mig24 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration24"
+	mig "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 )
 
 const (

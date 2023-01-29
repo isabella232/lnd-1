@@ -9,6 +9,12 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/blockcache"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/btcutil/hdkeychain"
@@ -24,12 +30,6 @@ import (
 	"github.com/btcsuite/btcwallet/wallet/txrules"
 	"github.com/btcsuite/btcwallet/walletdb"
 	"github.com/btcsuite/btcwallet/wtxmgr"
-	"github.com/indra-labs/lnd/lnd/blockcache"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
 )
 
 const (

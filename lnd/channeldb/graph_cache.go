@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 	"github.com/btcsuite/btcd/btcutil"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
 )
 
 // GraphCacheNode is an interface for all the information the cache needs to know

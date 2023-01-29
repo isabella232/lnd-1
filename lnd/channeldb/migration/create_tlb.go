@@ -3,7 +3,7 @@ package migration
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // CreateTLB creates a new top-level bucket with the passed bucket identifier.

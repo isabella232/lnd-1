@@ -1,6 +1,6 @@
 package wtwire
 
-import "github.com/indra-labs/lnd/lnd/lnwire"
+import "git-indra.lan/indra-labs/lnd/lnd/lnwire"
 
 // FeatureNames holds a mapping from each feature bit understood by this
 // implementation to its common name.

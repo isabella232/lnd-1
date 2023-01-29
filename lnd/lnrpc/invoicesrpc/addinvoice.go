@@ -11,17 +11,17 @@ import (
 	"sort"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/netann"
+	"git-indra.lan/indra-labs/lnd/lnd/routing"
+	"git-indra.lan/indra-labs/lnd/lnd/zpay32"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/netann"
-	"github.com/indra-labs/lnd/lnd/routing"
-	"github.com/indra-labs/lnd/lnd/zpay32"
 )
 
 const (

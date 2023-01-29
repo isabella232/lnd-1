@@ -5,11 +5,11 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration21/common"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration21/current"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration21/legacy"
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration21/common"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration21/current"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration21/legacy"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 var (

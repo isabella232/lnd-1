@@ -3,10 +3,10 @@ package chanbackup
 import (
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/keychain"
 )
 
 // ChannelRestorer is an interface that allows the Recover method to map the

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package verrpc;
 
-option go_package = "github.com/indra-labs/lnd/lnd/lnrpc/verrpc";
+option go_package = "git-indra.lan/indra-labs/lnd/lnd/lnrpc/verrpc";
 
 // Versioner is a service that can be used to get information about the version
 // and build information of the running daemon.

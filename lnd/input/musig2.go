@@ -5,10 +5,10 @@ import (
 	"crypto/sha256"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/schnorr"
 	"github.com/btcsuite/btcd/btcec/v2/schnorr/musig2"
-	"github.com/indra-labs/lnd/lnd/keychain"
 )
 
 const (

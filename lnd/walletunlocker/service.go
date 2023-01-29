@@ -8,18 +8,18 @@ import (
 	"os"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/aezeed"
+	"git-indra.lan/indra-labs/lnd/lnd/chanbackup"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/btcwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
 	"github.com/btcsuite/btcd/btcutil/hdkeychain"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcwallet/waddrmgr"
 	"github.com/btcsuite/btcwallet/wallet"
-	"github.com/indra-labs/lnd/lnd/aezeed"
-	"github.com/indra-labs/lnd/lnd/chanbackup"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwallet/btcwallet"
-	"github.com/indra-labs/lnd/lnd/macaroons"
 )
 
 var (

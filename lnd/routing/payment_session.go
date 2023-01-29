@@ -3,13 +3,13 @@ package routing
 import (
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btclog"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/indra-labs/lnd/lnd/build"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
 )
 
 // BlockPadding is used to increment the finalCltvDelta value for the last hop

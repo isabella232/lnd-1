@@ -8,15 +8,15 @@ import (
 	"errors"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/labels"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/walletrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chanfunding"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/btcutil/psbt"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/labels"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/walletrpc"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chanfunding"
 	"golang.org/x/sync/errgroup"
 )
 

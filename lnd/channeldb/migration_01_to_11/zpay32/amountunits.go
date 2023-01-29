@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
 )
 
 var (

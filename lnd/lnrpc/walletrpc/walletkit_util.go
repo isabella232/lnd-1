@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 )
 
 // AccountsToWatchOnly converts the accounts returned by the walletkit's

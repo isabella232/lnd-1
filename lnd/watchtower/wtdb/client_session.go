@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtpolicy"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtpolicy"
 )
 
 // CSessionStatus is a bit-field representing the possible statuses of

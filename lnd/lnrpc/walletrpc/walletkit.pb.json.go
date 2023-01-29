@@ -6,8 +6,8 @@ package walletrpc
 import (
 	"context"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/signrpc"
 	gateway "github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/indra-labs/lnd/lnd/lnrpc/signrpc"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/encoding/protojson"
 )

@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/autopilot"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil/bech32"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/indra-labs/lnd/lnd/autopilot"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/tor"
 	"github.com/miekg/dns"
 )
 
@@ -277,7 +277,7 @@ func (c *ChannelGraphBootstrapper) Name() string {
 // interface which implements peer bootstrapping via a special DNS seed as
 // defined in BOLT-0010. For further details concerning Lightning's current DNS
 // boot strapping protocol, see this link:
-//     * https://github.com/lightningnetwork/lightning-rfc/blob/master/10-dns-bootstrap.md
+//   - https://github.com/lightningnetwork/lightning-rfc/blob/master/10-dns-bootstrap.md
 type DNSSeedBootstrapper struct {
 	// dnsSeeds is an array of two tuples we'll use for bootstrapping. The
 	// first item in the tuple is the primary host we'll use to attempt the

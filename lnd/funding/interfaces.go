@@ -1,8 +1,8 @@
 package funding
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnpeer"
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnpeer"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // Controller is an interface with basic funding flow functions.

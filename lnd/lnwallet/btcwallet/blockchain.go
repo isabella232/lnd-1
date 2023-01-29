@@ -5,14 +5,14 @@ import (
 	"errors"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/btcsuite/btcwallet/chain"
 	"github.com/lightninglabs/neutrino"
 	"github.com/lightninglabs/neutrino/headerfs"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
 )
 
 var (

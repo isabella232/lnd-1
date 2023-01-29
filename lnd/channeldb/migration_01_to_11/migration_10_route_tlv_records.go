@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // MigrateRouteSerialization migrates the way we serialize routes across the

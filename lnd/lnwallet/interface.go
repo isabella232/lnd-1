@@ -6,6 +6,8 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"github.com/btcsuite/btcd/btcutil"
@@ -18,8 +20,6 @@ import (
 	base "github.com/btcsuite/btcwallet/wallet"
 	"github.com/btcsuite/btcwallet/wallet/txauthor"
 	"github.com/btcsuite/btcwallet/wtxmgr"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
 )
 
 const (

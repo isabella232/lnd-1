@@ -6,8 +6,8 @@ package peersrpc
 import (
 	"net"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/netann"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/netann"
 )
 
 // Config is the primary configuration struct for the peers RPC subserver.

@@ -3,8 +3,8 @@ package wtserver
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 // handleStateUpdates processes a stream of StateUpdate requests from the

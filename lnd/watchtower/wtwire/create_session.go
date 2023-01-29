@@ -3,8 +3,8 @@ package wtwire
 import (
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
 )
 
 // CreateSession is sent from a client to tower when to negotiate a session, which

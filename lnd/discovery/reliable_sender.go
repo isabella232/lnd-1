@@ -3,8 +3,8 @@ package discovery
 import (
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/lnpeer"
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnpeer"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // reliableSenderCfg contains all of necessary items for the reliableSender to

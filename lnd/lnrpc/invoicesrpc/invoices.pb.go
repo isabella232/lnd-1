@@ -7,7 +7,7 @@
 package invoicesrpc
 
 import (
-	lnrpc "github.com/indra-labs/lnd/lnd/lnrpc"
+	lnrpc "git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

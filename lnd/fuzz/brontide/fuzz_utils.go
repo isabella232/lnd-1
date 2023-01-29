@@ -7,10 +7,10 @@ import (
 	"encoding/hex"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/brontide"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/indra-labs/lnd/lnd/brontide"
-	"github.com/indra-labs/lnd/lnd/keychain"
 )
 
 var (

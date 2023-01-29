@@ -6,7 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/indra-labs/lnd/lnd/tlv"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 )
 
 // ExtraOpaqueData is the set of data that was appended to this message, some

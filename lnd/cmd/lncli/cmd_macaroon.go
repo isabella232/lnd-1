@@ -10,10 +10,10 @@ import (
 	"strings"
 	"unicode"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
 	"github.com/golang/protobuf/proto"
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/macaroons"
 	"github.com/urfave/cli"
 	"gopkg.in/macaroon-bakery.v2/bakery"
 	"gopkg.in/macaroon.v2"

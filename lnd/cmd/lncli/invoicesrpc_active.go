@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc/invoicesrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/invoicesrpc"
 	"github.com/urfave/cli"
 )
 

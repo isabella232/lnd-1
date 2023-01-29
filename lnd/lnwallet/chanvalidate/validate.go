@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/txscript"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 var (

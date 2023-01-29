@@ -8,7 +8,7 @@ import (
 	"encoding/binary"
 	"reflect"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // prefixWithMsgType takes []byte and adds a wire protocol prefix

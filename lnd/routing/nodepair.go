@@ -3,7 +3,7 @@ package routing
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 )
 
 // DirectedNodePair stores a directed pair of nodes.

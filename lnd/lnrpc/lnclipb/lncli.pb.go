@@ -7,7 +7,7 @@
 package lnclipb
 
 import (
-	verrpc "github.com/indra-labs/lnd/lnd/lnrpc/verrpc"
+	verrpc "git-indra.lan/indra-labs/lnd/lnd/lnrpc/verrpc"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

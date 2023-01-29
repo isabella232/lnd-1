@@ -1,4 +1,4 @@
-PKG := github.com/indra-labs/lnd/lnd
+PKG := git-indra.lan/indra-labs/lnd/lnd
 ESCPKG := github.com\/lightningnetwork\/lnd
 MOBILE_PKG := $(PKG)/mobile
 TOOLS_DIR := tools

@@ -4,12 +4,12 @@
 package invoicesrpc
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/invoices"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
+	"git-indra.lan/indra-labs/lnd/lnd/netann"
 	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/invoices"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/macaroons"
-	"github.com/indra-labs/lnd/lnd/netann"
 )
 
 // Config is the primary configuration struct for the invoices RPC server. It

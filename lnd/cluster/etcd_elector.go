@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/kvdb/etcd"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb/etcd"
 	"go.etcd.io/etcd/client/pkg/v3/transport"
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"go.etcd.io/etcd/client/v3/concurrency"

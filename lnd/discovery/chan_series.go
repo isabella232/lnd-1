@@ -3,11 +3,11 @@ package discovery
 import (
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/netann"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/netann"
-	"github.com/indra-labs/lnd/lnd/routing/route"
 )
 
 // ChannelGraphTimeSeries is an interface that provides time and block based

@@ -12,14 +12,14 @@ import (
 	"testing"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lntest"
+	"git-indra.lan/indra-labs/lnd/lnd/lntest/wait"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/rpcclient"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/go-errors/errors"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lntest"
-	"github.com/indra-labs/lnd/lnd/lntest/wait"
 	"github.com/stretchr/testify/require"
 )
 

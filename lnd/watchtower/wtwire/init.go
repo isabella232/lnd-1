@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"io"
 
+	"git-indra.lan/indra-labs/lnd/lnd/feature"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/feature"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // Init is the first message sent over the watchtower wire protocol, and

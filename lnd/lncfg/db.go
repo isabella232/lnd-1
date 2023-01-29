@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/kvdb/etcd"
-	"github.com/indra-labs/lnd/lnd/kvdb/postgres"
-	"github.com/indra-labs/lnd/lnd/lnwallet/btcwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb/etcd"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb/postgres"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/btcwallet"
 )
 
 const (

@@ -5,8 +5,8 @@ import (
 	"errors"
 	"sort"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
 )
 
 const (

@@ -3,8 +3,8 @@ package watchtower
 import (
 	"net"
 
-	"github.com/indra-labs/lnd/lnd/watchtower/lookout"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/lookout"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
 )
 
 // DB abstracts the persistent functionality required to run the watchtower

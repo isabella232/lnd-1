@@ -8,14 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	log2 "github.com/indra-labs/indra/pkg/proc/log"
-	"github.com/indra-labs/lnd"
 	"gopkg.in/src-d/go-git.v4"
-)
-
-var (
-	log   = log2.GetLogger(lnd.PathBase)
-	check = log.E.Chk
 )
 
 func main() {
@@ -53,17 +46,12 @@ func main() {
 		os.Exit(1)
 	}
 	e = os.RemoveAll(filepath.Join(dir, ".git"))
-	check(e)
 	e = os.RemoveAll(filepath.Join(dir, ".github"))
-	check(e)
 	e = os.RemoveAll(filepath.Join(dir, ".vscode"))
-	check(e)
 	// e = os.RemoveAll(filepath.Join(dir, "cmd"))
 	// check(e)
 	e = os.Remove(filepath.Join(dir, "go.mod"))
-	check(e)
 	e = os.Remove(filepath.Join(dir, "go.sum"))
-	check(e)
 	e = filepath.Walk(dir, func(path string, info fs.FileInfo, err error) error {
 		file, e := os.ReadFile(path)
 		if e != nil {
@@ -75,26 +63,23 @@ func main() {
 			strings.HasSuffix(filename, "_test.go") ||
 			strings.HasSuffix(filename, ".md") {
 			e = os.Remove(path)
-			check(e)
 		} else {
 			if filename == "Makefile" {
 				file = []byte(strings.ReplaceAll(string(file),
 					"github.com/lightningnetwork/lnd",
-					"github.com/indra-labs/lnd/lnd"))
+					"git-indra.lan/indra-labs/lnd/lnd"))
 			}
 			e = os.WriteFile(path,
 				[]byte(strings.ReplaceAll(string(file),
 					"\"github.com/lightningnetwork/lnd",
-					"\"github.com/indra-labs/lnd/lnd")), 0755)
-			check(e)
+					"\"git-indra.lan/indra-labs/lnd/lnd")), 0755)
 		}
 		return nil
 	})
-	check(e)
 	runCmdWithoutOutput("go", "mod", "tidy")
 }
 
 func runCmdWithoutOutput(cmd ...string) {
 	c := exec.Command(cmd[0], cmd[1:]...)
-	check(c.Run())
+	c.Run()
 }

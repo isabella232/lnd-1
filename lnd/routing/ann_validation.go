@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/go-errors/errors"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // ValidateChannelAnn validates the channel announcement message and checks

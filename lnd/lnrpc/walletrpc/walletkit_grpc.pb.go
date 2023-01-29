@@ -4,7 +4,7 @@ package walletrpc
 
 import (
 	context "context"
-	signrpc "github.com/indra-labs/lnd/lnd/lnrpc/signrpc"
+	signrpc "git-indra.lan/indra-labs/lnd/lnd/lnrpc/signrpc"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"

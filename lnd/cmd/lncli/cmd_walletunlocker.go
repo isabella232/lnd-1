@@ -10,11 +10,11 @@ import (
 	"strconv"
 	"strings"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/walletrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/walletunlocker"
 	"github.com/lightninglabs/protobuf-hex-display/jsonpb"
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
-	"github.com/indra-labs/lnd/lnd/lnrpc/walletrpc"
-	"github.com/indra-labs/lnd/lnd/walletunlocker"
 	"github.com/urfave/cli"
 )
 

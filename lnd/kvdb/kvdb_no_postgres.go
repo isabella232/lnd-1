@@ -6,7 +6,7 @@ package kvdb
 import (
 	"errors"
 
-	"github.com/indra-labs/lnd/lnd/kvdb/postgres"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb/postgres"
 )
 
 const PostgresBackend = false

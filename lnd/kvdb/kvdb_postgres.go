@@ -3,7 +3,7 @@
 
 package kvdb
 
-import "github.com/indra-labs/lnd/lnd/kvdb/postgres"
+import "git-indra.lan/indra-labs/lnd/lnd/kvdb/postgres"
 
 const PostgresBackend = true
 

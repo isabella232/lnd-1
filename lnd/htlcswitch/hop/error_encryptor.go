@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	sphinx "github.com/lightningnetwork/lightning-onion"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // EncrypterType establishes an enum used in serialization to indicate how to
@@ -88,9 +88,9 @@ type SphinxErrorEncrypter struct {
 // should be used to deserialize an encoded SphinxErrorEncrypter. Since the
 // actual encrypter is not stored in plaintext while at rest, reconstructing the
 // error encrypter requires:
-//   1) Decode: to deserialize the ephemeral public key.
-//   2) Reextract: to "unlock" the actual error encrypter using an active
-//        OnionProcessor.
+//  1. Decode: to deserialize the ephemeral public key.
+//  2. Reextract: to "unlock" the actual error encrypter using an active
+//     OnionProcessor.
 func NewSphinxErrorEncrypter() *SphinxErrorEncrypter {
 	return &SphinxErrorEncrypter{
 		OnionErrorEncrypter: nil,

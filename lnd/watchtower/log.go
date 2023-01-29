@@ -1,10 +1,10 @@
 package watchtower
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/lookout"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/build"
-	"github.com/indra-labs/lnd/lnd/watchtower/lookout"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
 )
 
 // log is a logger that is initialized with no output filters.  This

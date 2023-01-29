@@ -7,10 +7,10 @@ import (
 	"net"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/tor"
 )
 
 // Conn is an implementation of net.Conn which enforces an authenticated key

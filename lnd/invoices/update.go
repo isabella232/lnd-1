@@ -4,11 +4,11 @@ import (
 	"encoding/hex"
 	"errors"
 
-	"github.com/indra-labs/lnd/lnd/amp"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/record"
+	"git-indra.lan/indra-labs/lnd/lnd/amp"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/record"
 )
 
 // invoiceUpdateCtx is an object that describes the context for the invoice

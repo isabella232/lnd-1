@@ -1,11 +1,11 @@
 package chainreg
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 	"github.com/btcsuite/btcd/chaincfg"
 	bitcoinCfg "github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	bitcoinWire "github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/keychain"
 	litecoinCfg "github.com/ltcsuite/ltcd/chaincfg"
 	litecoinWire "github.com/ltcsuite/ltcd/wire"
 )

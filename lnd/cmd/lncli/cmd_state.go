@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	"github.com/urfave/cli"
 )
 

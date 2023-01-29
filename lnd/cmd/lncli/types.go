@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
 )
 
 // OutPoint displays an outpoint string in the form "<txid>:<output-index>".

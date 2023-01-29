@@ -7,8 +7,8 @@
 package walletrpc
 
 import (
-	lnrpc "github.com/indra-labs/lnd/lnd/lnrpc"
-	signrpc "github.com/indra-labs/lnd/lnd/lnrpc/signrpc"
+	lnrpc "git-indra.lan/indra-labs/lnd/lnd/lnrpc"
+	signrpc "git-indra.lan/indra-labs/lnd/lnd/lnrpc/signrpc"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

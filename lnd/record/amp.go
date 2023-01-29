@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/tlv"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 )
 
 // AMPOnionType is the type used in the onion to reference the AMP fields:

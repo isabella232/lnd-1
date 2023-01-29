@@ -4,18 +4,18 @@ import (
 	"bytes"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/shachain"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/kvdb"
-	"github.com/indra-labs/lnd/lnd/shachain"
 
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	mig25 "github.com/indra-labs/lnd/lnd/channeldb/migration25"
-	mig26 "github.com/indra-labs/lnd/lnd/channeldb/migration26"
-	mig "github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	mig25 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration25"
+	mig26 "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration26"
+	mig "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11"
 )
 
 var (

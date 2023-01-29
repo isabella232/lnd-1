@@ -3,8 +3,8 @@ package netann
 import (
 	"bytes"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // CreateChanAnnouncement is a helper function which creates all channel

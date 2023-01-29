@@ -3,10 +3,10 @@ package routing
 import (
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/multimutex"
-	"github.com/indra-labs/lnd/lnd/queue"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/multimutex"
+	"git-indra.lan/indra-labs/lnd/lnd/queue"
 )
 
 // ControlTower tracks all outgoing payments made, whose primary purpose is to

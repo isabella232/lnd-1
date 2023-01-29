@@ -1,11 +1,11 @@
 package routing
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/zpay32"
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/routing/route"
-	"github.com/indra-labs/lnd/lnd/zpay32"
 )
 
 // A compile time assertion to ensure MissionControl meets the

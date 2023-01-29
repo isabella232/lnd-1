@@ -10,7 +10,7 @@
 set -e
 
 LND_VERSION_REGEX="lnd version (.+) commit"
-PKG="github.com/indra-labs/lnd/lnd"
+PKG="git-indra.lan/indra-labs/lnd/lnd"
 PACKAGE=lnd
 
 # Needed for setting file timestamps to get reproducible archives.

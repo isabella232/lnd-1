@@ -3,7 +3,7 @@ package feature
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // ErrUnknownRequired signals that a feature vector requires certain features

@@ -1,11 +1,11 @@
 package blockcache
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/multimutex"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/multimutex"
 	"github.com/lightninglabs/neutrino/cache"
 	"github.com/lightninglabs/neutrino/cache/lru"
 )

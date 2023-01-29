@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chanbackup"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/channelnotifier"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/chanbackup"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/channelnotifier"
 )
 
 // addrSource is an interface that allow us to get the addresses for a target

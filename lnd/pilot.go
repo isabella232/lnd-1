@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/autopilot"
+	"git-indra.lan/indra-labs/lnd/lnd/chainreg"
+	"git-indra.lan/indra-labs/lnd/lnd/funding"
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/autopilot"
-	"github.com/indra-labs/lnd/lnd/chainreg"
-	"github.com/indra-labs/lnd/lnd/funding"
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/tor"
 )
 
 // validateAtplConfig is a helper method that makes sure the passed

@@ -4,8 +4,8 @@
 package lnwallet
 
 import (
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/shachain"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/shachain"
 )
 
 // nextRevocationProducer creates a new revocation producer, deriving the

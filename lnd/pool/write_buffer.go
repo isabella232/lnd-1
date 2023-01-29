@@ -3,7 +3,7 @@ package pool
 import (
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/buffer"
+	"git-indra.lan/indra-labs/lnd/lnd/buffer"
 )
 
 const (

@@ -1,8 +1,8 @@
 package kvdb
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb/postgres"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/kvdb/postgres"
 )
 
 // log is a logger that is initialized as disabled.  This means the package will

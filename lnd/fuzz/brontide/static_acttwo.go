@@ -4,7 +4,7 @@
 package brontidefuzz
 
 import (
-	"github.com/indra-labs/lnd/lnd/brontide"
+	"git-indra.lan/indra-labs/lnd/lnd/brontide"
 )
 
 // Fuzz_static_acttwo is a go-fuzz harness for ActTwo in the brontide

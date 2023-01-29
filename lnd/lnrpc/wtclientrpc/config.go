@@ -1,9 +1,9 @@
 package wtclientrpc
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtclient"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/lncfg"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtclient"
 )
 
 // Config is the primary configuration struct for the watchtower RPC server. It

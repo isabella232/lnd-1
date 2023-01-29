@@ -9,12 +9,12 @@ import (
 	"math"
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
 	"github.com/go-errors/errors"
-	"github.com/indra-labs/lnd/lnd/tor"
 )
 
 const (

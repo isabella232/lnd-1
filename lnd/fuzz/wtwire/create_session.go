@@ -4,7 +4,7 @@
 package wtwirefuzz
 
 import (
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 // Fuzz_create_session is used by go-fuzz.

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package neutrinorpc;
 
-option go_package = "github.com/indra-labs/lnd/lnd/lnrpc/neutrinorpc";
+option go_package = "git-indra.lan/indra-labs/lnd/lnd/lnrpc/neutrinorpc";
 
 // NeutrinoKit is a service that can be used to get information about the
 // current state of the neutrino instance, fetch blocks and add/remove peers.

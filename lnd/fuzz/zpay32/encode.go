@@ -7,11 +7,11 @@ import (
 	"encoding/hex"
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/zpay32"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/indra-labs/lnd/lnd/zpay32"
 )
 
 // Fuzz_encode is used by go-fuzz.

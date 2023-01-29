@@ -1,6 +1,6 @@
 package chanacceptor
 
-import "github.com/indra-labs/lnd/lnd/lnwire"
+import "git-indra.lan/indra-labs/lnd/lnd/lnwire"
 
 // ZeroConfAcceptor wraps a regular ChainedAcceptor. If no acceptors are in the
 // ChainedAcceptor, then Accept will reject all channel open requests. This

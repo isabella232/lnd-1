@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/rpcclient"
 	"github.com/lightninglabs/neutrino"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
 )
 
 // UnsafeStart starts the notifier with a specified best height and optional

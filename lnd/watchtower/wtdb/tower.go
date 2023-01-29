@@ -6,8 +6,8 @@ import (
 	"io"
 	"net"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // TowerID is a unique 64-bit identifier allocated to each unique watchtower.

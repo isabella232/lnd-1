@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 // Config couples all the items that an autopilot agent needs to function.

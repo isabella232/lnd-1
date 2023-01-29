@@ -1,8 +1,8 @@
 package wtserver
 
 import (
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 // handleDeleteSession processes a DeleteSession request for a client with given

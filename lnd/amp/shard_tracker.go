@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/record"
-	"github.com/indra-labs/lnd/lnd/routing/shards"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/record"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/shards"
 )
 
 // Shard is an implementation of the shards.PaymentShards interface specific

@@ -1,7 +1,7 @@
 package record
 
 import (
-	"github.com/indra-labs/lnd/lnd/tlv"
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 )
 
 const (

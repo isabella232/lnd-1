@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"io"
 
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb/migration_01_to_11/zpay32"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 	bitcoinCfg "github.com/btcsuite/btcd/chaincfg"
 	"github.com/btcsuite/btcd/wire"
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/channeldb/migration_01_to_11/zpay32"
-	"github.com/indra-labs/lnd/lnd/kvdb"
 	litecoinCfg "github.com/ltcsuite/ltcd/chaincfg"
 )
 

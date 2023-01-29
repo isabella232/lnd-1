@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
 )
 
 // defaultHandshakes is the maximum number of handshakes that can be done in

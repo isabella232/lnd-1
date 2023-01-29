@@ -3,7 +3,7 @@ package wtdb
 import (
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
 )
 
 // SessionStateUpdate holds a state update sent by a client along with its

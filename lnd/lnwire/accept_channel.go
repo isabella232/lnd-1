@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"io"
 
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 // AcceptChannel is the message Bob sends to Alice after she initiates the

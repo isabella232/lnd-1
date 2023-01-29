@@ -1,6 +1,6 @@
 package lncfg
 
-import "github.com/indra-labs/lnd/lnd/watchtower"
+import "git-indra.lan/indra-labs/lnd/lnd/watchtower"
 
 // Watchtower holds the daemon specific configuration parameters for running a
 // watchtower that shares resources with the daemon.

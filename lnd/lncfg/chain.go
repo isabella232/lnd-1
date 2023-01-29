@@ -3,7 +3,7 @@ package lncfg
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // Chain holds the configuration options for the daemon's chain settings.

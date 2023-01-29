@@ -1,9 +1,9 @@
 package chainview
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
 )
 
 // FilteredChainView represents a subscription to a certain subset of the

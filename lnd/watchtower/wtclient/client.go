@@ -8,20 +8,20 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtpolicy"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/build"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/input"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/tor"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtpolicy"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 const (
@@ -603,11 +603,11 @@ func (c *TowerClient) RegisterChannel(chanID lnwire.ChannelID) error {
 
 // BackupState initiates a request to back up a particular revoked state. If the
 // method returns nil, the backup is guaranteed to be successful unless the:
-//  - client is force quit,
-//  - justice transaction would create dust outputs when trying to abide by the
-//    negotiated policy, or
-//  - breached outputs contain too little value to sweep at the target sweep fee
-//    rate.
+//   - client is force quit,
+//   - justice transaction would create dust outputs when trying to abide by the
+//     negotiated policy, or
+//   - breached outputs contain too little value to sweep at the target sweep fee
+//     rate.
 func (c *TowerClient) BackupState(chanID *lnwire.ChannelID,
 	breachInfo *lnwallet.BreachRetribution,
 	chanType channeldb.ChannelType) error {

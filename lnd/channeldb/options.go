@@ -3,8 +3,8 @@ package channeldb
 import (
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/clock"
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/clock"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 const (

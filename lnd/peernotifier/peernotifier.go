@@ -3,7 +3,7 @@ package peernotifier
 import (
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/subscribe"
+	"git-indra.lan/indra-labs/lnd/lnd/subscribe"
 )
 
 // PeerNotifier is a subsystem which observes peer offline and online events.

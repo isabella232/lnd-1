@@ -6,9 +6,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
+	lnwire "git-indra.lan/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 	"github.com/btcsuite/btcd/btcec/v2"
-	lnwire "github.com/indra-labs/lnd/lnd/channeldb/migration/lnwire21"
-	"github.com/indra-labs/lnd/lnd/kvdb"
 )
 
 // MigrateNodeAndEdgeUpdateIndex is a migration function that will update the

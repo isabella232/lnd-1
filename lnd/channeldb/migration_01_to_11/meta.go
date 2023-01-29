@@ -1,7 +1,7 @@
 package migration_01_to_11
 
 import (
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 var (

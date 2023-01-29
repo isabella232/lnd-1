@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"io"
 
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/go-errors/errors"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 // FailureMessage represents the onion failure object identified by its unique

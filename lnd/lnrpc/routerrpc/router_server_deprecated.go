@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 )
 
 // legacyTrackPaymentServer is a wrapper struct that transforms a stream of main

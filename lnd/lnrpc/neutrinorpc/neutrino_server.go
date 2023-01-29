@@ -17,7 +17,7 @@ import (
 	"github.com/btcsuite/btcd/wire"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 )
 
 const (

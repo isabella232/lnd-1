@@ -1,8 +1,8 @@
 package wtdb
 
 import (
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // migration is a function which takes a prior outdated version of the database

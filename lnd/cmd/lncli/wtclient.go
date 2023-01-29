@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/indra-labs/lnd/lnd/lnrpc/wtclientrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/wtclientrpc"
 	"github.com/urfave/cli"
 )
 

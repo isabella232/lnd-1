@@ -3,9 +3,9 @@ package netann
 import (
 	"fmt"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
 )
 
 // NodeSigner is an implementation of the MessageSigner interface backed by the

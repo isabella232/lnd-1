@@ -4,7 +4,7 @@
 package lnwirefuzz
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // Fuzz_channel_reestablish is used by go-fuzz.

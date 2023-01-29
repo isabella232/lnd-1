@@ -4,7 +4,7 @@ import "lightning.proto";
 
 package devrpc;
 
-option go_package = "github.com/indra-labs/lnd/lnd/lnrpc/devrpc";
+option go_package = "git-indra.lan/indra-labs/lnd/lnd/lnrpc/devrpc";
 
 service Dev {
     /*

@@ -5,15 +5,15 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/blob"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtpolicy"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/watchtower/blob"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtpolicy"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 // SessionNegotiator is an interface for asynchronously requesting new sessions.

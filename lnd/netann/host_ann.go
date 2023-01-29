@@ -4,8 +4,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/ticker"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/ticker"
 )
 
 // HostAnnouncerConfig is the main config for the HostAnnouncer.

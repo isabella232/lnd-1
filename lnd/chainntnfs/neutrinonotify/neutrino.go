@@ -8,6 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/blockcache"
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/queue"
 	"github.com/btcsuite/btcd/btcjson"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/btcutil/gcs/builder"
@@ -17,10 +21,6 @@ import (
 	"github.com/btcsuite/btcd/wire"
 	"github.com/lightninglabs/neutrino"
 	"github.com/lightninglabs/neutrino/headerfs"
-	"github.com/indra-labs/lnd/lnd/blockcache"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/queue"
 )
 
 const (
@@ -37,7 +37,7 @@ const (
 // running full node.
 //
 // TODO(roasbeef): heavily consolidate with NeutrinoNotifier code
-//  * maybe combine into single package?
+//   - maybe combine into single package?
 type NeutrinoNotifier struct {
 	epochClientCounter uint64 // To be used atomically.
 

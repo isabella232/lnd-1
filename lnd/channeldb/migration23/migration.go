@@ -3,7 +3,7 @@ package migration23
 import (
 	"fmt"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 var (

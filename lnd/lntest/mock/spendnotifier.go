@@ -3,8 +3,8 @@ package mock
 import (
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
 )
 
 // SpendNotifier extends the mock.ChainNotifier so that spend

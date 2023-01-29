@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/indra-labs/lnd/lnd/lnrpc/autopilotrpc"
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc/autopilotrpc"
 	"github.com/urfave/cli"
 )
 

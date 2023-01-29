@@ -3,10 +3,10 @@ package contractcourt
 import (
 	"math"
 
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/input"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/input"
 )
 
 // htlcLeaseResolver is a struct that houses the lease specific HTLC resolution

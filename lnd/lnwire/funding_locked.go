@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"io"
 
+	"git-indra.lan/indra-labs/lnd/lnd/tlv"
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/indra-labs/lnd/lnd/tlv"
 )
 
 // FundingLocked is the message that both parties to a new channel creation

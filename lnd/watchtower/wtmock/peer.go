@@ -5,8 +5,8 @@ import (
 	"net"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtserver"
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtserver"
 )
 
 // MockPeer emulates a single endpoint of brontide transport.

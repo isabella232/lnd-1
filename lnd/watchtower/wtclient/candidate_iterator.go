@@ -5,7 +5,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
 )
 
 // TowerCandidateIterator provides an abstraction for iterating through possible

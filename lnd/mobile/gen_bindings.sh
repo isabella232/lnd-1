@@ -29,7 +29,7 @@ fi
 pkg="lndmobile"
 
 # The package where the protobuf definitions originally are found.
-target_pkg="github.com/indra-labs/lnd/lnd/lnrpc"
+target_pkg="git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 
 # A mapping from grpc service to name of the custom listeners. The grpc server
 # must be configured to listen on these.

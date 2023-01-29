@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"reflect"
 
-	"github.com/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 )
 
 // Fuzz_node_announcement is used by go-fuzz.

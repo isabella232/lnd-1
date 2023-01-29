@@ -3,8 +3,8 @@ package invoices
 import (
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
 )
 
 // HtlcResolution describes how an htlc should be resolved.

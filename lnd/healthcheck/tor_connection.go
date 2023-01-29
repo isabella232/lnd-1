@@ -6,7 +6,7 @@ import (
 	"io"
 	"syscall"
 
-	"github.com/indra-labs/lnd/lnd/tor"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 )
 
 // CheckTorServiceStatus checks whether the onion service is reachable by

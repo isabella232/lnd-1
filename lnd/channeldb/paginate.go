@@ -1,6 +1,6 @@
 package channeldb
 
-import "github.com/indra-labs/lnd/lnd/kvdb"
+import "git-indra.lan/indra-labs/lnd/lnd/kvdb"
 
 type paginator struct {
 	// cursor is the cursor which we are using to iterate through a bucket.

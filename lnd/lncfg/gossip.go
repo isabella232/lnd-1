@@ -3,8 +3,8 @@ package lncfg
 import (
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/discovery"
-	"github.com/indra-labs/lnd/lnd/routing/route"
+	"git-indra.lan/indra-labs/lnd/lnd/discovery"
+	"git-indra.lan/indra-labs/lnd/lnd/routing/route"
 )
 
 type Gossip struct {

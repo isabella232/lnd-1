@@ -3,9 +3,9 @@ package channelnotifier
 import (
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/subscribe"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/channeldb"
-	"github.com/indra-labs/lnd/lnd/subscribe"
 )
 
 // ChannelNotifier is a subsystem which all active, inactive, and closed channel

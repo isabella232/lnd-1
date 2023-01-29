@@ -3,9 +3,9 @@ package chanacceptor
 import (
 	"errors"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
 	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
-	"github.com/indra-labs/lnd/lnd/lnwire"
 )
 
 var (

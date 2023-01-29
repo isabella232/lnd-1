@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/ticker"
+	"git-indra.lan/indra-labs/lnd/lnd/ticker"
 )
 
 // Config contains configuration settings for our monitor.

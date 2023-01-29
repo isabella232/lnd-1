@@ -1,10 +1,10 @@
 package input
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/txscript"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lntypes"
 )
 
 // Input represents an abstract UTXO which is to be spent using a sweeping

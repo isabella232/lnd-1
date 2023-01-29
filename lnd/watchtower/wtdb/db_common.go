@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 var (

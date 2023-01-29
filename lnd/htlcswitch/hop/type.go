@@ -1,6 +1,6 @@
 package hop
 
-import "github.com/indra-labs/lnd/lnd/lnwire"
+import "git-indra.lan/indra-labs/lnd/lnd/lnwire"
 
 var (
 	// Exit is a special "hop" denoting that an incoming HTLC is meant to

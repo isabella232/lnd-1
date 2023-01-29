@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"sync"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lncfg"
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
-	"github.com/indra-labs/lnd/lnd/lncfg"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"google.golang.org/grpc"
 )

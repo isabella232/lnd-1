@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/indra-labs/lnd/lnd/lntypes"
-	"github.com/indra-labs/lnd/lnd/record"
+	"git-indra.lan/indra-labs/lnd/lnd/lntypes"
+	"git-indra.lan/indra-labs/lnd/lnd/record"
 )
 
 // PaymentShard is an interface representing a shard tracked by the

@@ -8,13 +8,13 @@ import (
 	"sync"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/keychain"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwire"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtdb"
+	"git-indra.lan/indra-labs/lnd/lnd/watchtower/wtwire"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/connmgr"
-	"github.com/indra-labs/lnd/lnd/keychain"
-	"github.com/indra-labs/lnd/lnd/lnwire"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtdb"
-	"github.com/indra-labs/lnd/lnd/watchtower/wtwire"
 )
 
 var (
@@ -203,8 +203,8 @@ func (s *Server) peerHandler() {
 
 // handleClient processes a series watchtower messages sent by a client. The
 // client may either send:
-//  * a single CreateSession message.
-//  * a series of StateUpdate messages.
+//   - a single CreateSession message.
+//   - a series of StateUpdate messages.
 //
 // This method uses the server's peer map to ensure at most one peer using the
 // same session id can enter the main event loop. The connection will be

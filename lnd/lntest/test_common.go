@@ -9,8 +9,8 @@ import (
 	"os"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnrpc"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lnrpc"
 )
 
 const (

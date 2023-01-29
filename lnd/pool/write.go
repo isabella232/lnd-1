@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/buffer"
+	"git-indra.lan/indra-labs/lnd/lnd/buffer"
 )
 
 // Write is a worker pool specifically designed for sharing access to

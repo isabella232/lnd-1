@@ -4,8 +4,8 @@
 package chainrpc
 
 import (
-	"github.com/indra-labs/lnd/lnd/chainntnfs"
-	"github.com/indra-labs/lnd/lnd/macaroons"
+	"git-indra.lan/indra-labs/lnd/lnd/chainntnfs"
+	"git-indra.lan/indra-labs/lnd/lnd/macaroons"
 )
 
 // Config is the primary configuration struct for the chain notifier RPC server.

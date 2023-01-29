@@ -1,8 +1,8 @@
 package chancloser
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/build"
 	"github.com/btcsuite/btclog"
-	"github.com/indra-labs/lnd/lnd/build"
 )
 
 // chancloserLog is a logger that is initialized with the btclog.Disabled

@@ -1,9 +1,9 @@
 package sweep
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
 	"github.com/btcsuite/btcd/chaincfg/chainhash"
 	"github.com/btcsuite/btcd/wire"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
 )
 
 // Wallet contains all wallet related functionality required by sweeper.

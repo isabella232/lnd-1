@@ -3,7 +3,7 @@ package pool
 import (
 	"time"
 
-	"github.com/indra-labs/lnd/lnd/buffer"
+	"git-indra.lan/indra-labs/lnd/lnd/buffer"
 )
 
 // Read is a worker pool specifically designed for sharing access to buffer.Read

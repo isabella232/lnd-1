@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/indra-labs/lnd/lnd/kvdb"
+	"git-indra.lan/indra-labs/lnd/lnd/kvdb"
 )
 
 // DumpDB dumps go code describing the contents of the database to stdout. This
@@ -15,12 +15,12 @@ import (
 //
 // Example output:
 //
-// map[string]interface{}{
-// 	hex("1234"): map[string]interface{}{
-// 		"human-readable": hex("102030"),
-// 		hex("1111"): hex("5783492373"),
-// 	},
-// }
+//	map[string]interface{}{
+//		hex("1234"): map[string]interface{}{
+//			"human-readable": hex("102030"),
+//			hex("1111"): hex("5783492373"),
+//		},
+//	}
 func DumpDB(tx kvdb.RTx, rootKey []byte) error {
 	bucket := tx.ReadBucket(rootKey)
 	if bucket == nil {

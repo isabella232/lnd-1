@@ -7,7 +7,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/indra-labs/lnd/lnd/tor"
+	"git-indra.lan/indra-labs/lnd/lnd/tor"
 )
 
 // addressType specifies the network protocol and version that should be used

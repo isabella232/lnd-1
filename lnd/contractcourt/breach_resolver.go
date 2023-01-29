@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/indra-labs/lnd/lnd/channeldb"
+	"git-indra.lan/indra-labs/lnd/lnd/channeldb"
 )
 
 // breachResolver is a resolver that will handle breached closes. In the

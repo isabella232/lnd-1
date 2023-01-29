@@ -1,12 +1,12 @@
 package lnwallet
 
 import (
+	"git-indra.lan/indra-labs/lnd/lnd/build"
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet/chainfee"
 	"github.com/btcsuite/btclog"
 	"github.com/btcsuite/btcwallet/chain"
 	btcwallet "github.com/btcsuite/btcwallet/wallet"
 	"github.com/btcsuite/btcwallet/wtxmgr"
-	"github.com/indra-labs/lnd/lnd/build"
-	"github.com/indra-labs/lnd/lnd/lnwallet/chainfee"
 )
 
 // walletLog is a logger that is initialized with no output filters.  This

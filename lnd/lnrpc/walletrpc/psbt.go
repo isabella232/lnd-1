@@ -8,11 +8,11 @@ import (
 	"math"
 	"time"
 
+	"git-indra.lan/indra-labs/lnd/lnd/lnwallet"
 	"github.com/btcsuite/btcd/btcutil/psbt"
 	"github.com/btcsuite/btcd/wire"
 	base "github.com/btcsuite/btcwallet/wallet"
 	"github.com/btcsuite/btcwallet/wtxmgr"
-	"github.com/indra-labs/lnd/lnd/lnwallet"
 )
 
 const (

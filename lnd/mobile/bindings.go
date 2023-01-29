@@ -10,9 +10,9 @@ import (
 	"strings"
 	"sync/atomic"
 
+	"git-indra.lan/indra-labs/lnd/lnd"
+	"git-indra.lan/indra-labs/lnd/lnd/signal"
 	flags "github.com/jessevdk/go-flags"
-	"github.com/indra-labs/lnd/lnd"
-	"github.com/indra-labs/lnd/lnd/signal"
 	"google.golang.org/grpc"
 )
 
@@ -24,6 +24,7 @@ var lndStarted int32
 //
 // extraArgs can be used to pass command line arguments to lnd that will
 // override what is found in the config file. Example:
+//
 //	extraArgs = "--bitcoin.testnet --lnddir=\"/tmp/folder name/\" --profile=5050"
 //
 // The rpcReady is called lnd is ready to accept RPC calls.
